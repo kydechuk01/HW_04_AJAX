@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HW_04 21.7 AJAX final task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="alert">Внимание! Вследствие того, что исходный ресурс для задания (<a
+      href="https://picsum.photos">https://picsum.photos</a>) заблокировал запросы с российских IP, для домашней работы
+    выбран другой сайт: <a
+      href="https://www.slingacademy.com/article/sample-photos-free-fake-rest-api-for-practice/">https://www.slingacademy.com/article/sample-photos-free-fake-rest-api-for-practice/</a>.
+    Ресурс иногда может немного притормаживать при отдаче контента, но в целом полностью решает поставленную задачу.
+  </div>
+  <div>
+    <input type="number" id="inputPageNumber" placeholder="Номер страницы">
+    <input type="number" id="inputPageLimit" placeholder="Лимит">
+    <input type="submit" id="btnRequestImages" value="Запрос изображений">
+    <a href="#" id="linkReset">Сброс настроек</a>
+  </div>
+  <div id="loadingPlaceholder">&nbsp;</div>
+  <div id="imagesList">Здесь будут новые изображения</div>
+  <script src="21.7_final_task_6.js"></script>
+</body>
+
+</html>

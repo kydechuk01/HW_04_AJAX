@@ -1,0 +1,70 @@
+.block {
+  margin-top: 50px;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.block2 {
+  margin-top: 50px;
+  font-style: normal;
+  color: blue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100px;
+}
+
+.todoNumber {
+  font-weight: bold;
+}
+
+.todoCompleted {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.todoNotCompleted {
+  text-decoration: none;
+}
+
+#alert {
+  background-color: blanchedalmond;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.error {
+  color: red;
+}
+
+.imagePreview {
+  width: 300px;
+  height: auto;
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+
+#loadingPlaceholder {
+  padding: 5px;
+}
+
+#imagesList {
+  color: silver;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.222);
+  width: minmax(300px, auto);
+}
+
+#linkReset {
+  font-size: smaller;
+  text-decoration: none;
+}
+
+#linkReset:hover {
+  color: red;
+  text-decoration: underline;
+}
