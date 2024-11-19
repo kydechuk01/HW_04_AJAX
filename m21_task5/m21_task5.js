@@ -68,10 +68,6 @@ function renderTodos(userTodos) {
   listTodos.innerHTML = todolist;
 }
 
-
-const userName = getUserNamefromLocalStorage();
-
-
 btnRequestTodos.addEventListener('click', () => {
   if (inputUserId.value == '') return;
   clearResults();

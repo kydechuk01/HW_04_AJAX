@@ -5,8 +5,7 @@ function generateRandom() {
 const testPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         let testRandom = generateRandom();
-        (testRandom % 2 === 0) ?
-            resolve(testRandom) : reject(testRandom);
+        (testRandom % 2 === 0) ? resolve(testRandom) : reject(testRandom);
     }, 1000)
 });
 

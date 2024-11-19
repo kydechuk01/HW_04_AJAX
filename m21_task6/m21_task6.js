@@ -97,12 +97,12 @@ function clearImagesList() {
 
 // сохранение настроек последнего успешного запроса в кэш
 function saveLastVisit(imagesData) {
-    localStorage.setItem('task2176_lastvisit', JSON.stringify(imagesData));
+    localStorage.setItem('m21_task6_lastvisit', JSON.stringify(imagesData));
 }
 
 // загрузка настроек последнего успешного запроса из кэша и запуск отрисовки
 function getLastVisit() {
-    data = JSON.parse(localStorage.getItem('task2176_lastvisit'));
+    data = JSON.parse(localStorage.getItem('m21_task6_lastvisit'));
     inputPageLimit.value = data.limit;
     inputPageNumber.value = data.offset;
     fetchImages(data.offset, data.limit);
@@ -180,7 +180,7 @@ function resetSettings() {
     inputPageNumber.value = '';
     clearImagesList();
     clearLoader();
-    localStorage.removeItem('task2176_lastvisit');
+    localStorage.removeItem('m21_task6_lastvisit');
     console.log('Настройки очищены');
 }
 
@@ -193,7 +193,7 @@ function resetSettings() {
 window.onload = () => {
     setBtnListener();
     setResetListener();
-    const userLastVisit = localStorage.getItem('task2176_lastvisit');
+    const userLastVisit = localStorage.getItem('m21_task6_lastvisit');
     if (!userLastVisit) {
         console.log('First visit!');
     } else {
